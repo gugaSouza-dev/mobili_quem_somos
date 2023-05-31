@@ -1,0 +1,282 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'VW Head';
+	src: url('./fonts/VWText-Regular.otf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+:root{
+	--font_titulo: 'VW Head', sans-serif;
+	--font_texto: 'Verdana', sans-serif;
+	--azul_vw: #001E50;
+	--verde: #61D248;
+	--background_color: #E7E7E7;
+}
+
+header {
+	background-color: #ffff;
+	height: 13vh;
+	display: flex;
+	align-items: center;
+	font-family: var(--font_titulo);
+}
+
+.posicionamento{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.posicionamento_header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+header a{
+	color: var(--azul_vw);
+	text-transform: initial;
+	text-decoration: none;
+	font-family: var(--font_titulo);
+	font-size: 20px;
+}
+
+.header_links{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 450px;
+}
+
+header .login{
+	width: 300px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.login .btn_login{
+	border: 2px solid var(--azul_vw);
+	border-radius: 8px;
+	padding: 3px 25px 3px 25px;
+}
+
+.login .btn_cadastro{
+	border: 2px solid var(--azul_vw);;
+	background: var(--azul_vw);
+	color: aliceblue;
+	border-radius: 8px;
+	padding: 3px 25px 3px 25px;
+}
+
+body{
+	background-color: #E7E7E7;
+}
+
+.facilitando{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30px;
+}
+
+h1 {
+	width: 1em;
+	position: absolute;
+	left: -333em;
+	overflow: hidden;
+}
+
+.facilitando div{
+	color: var(--azul_vw);
+	width: 600px;
+}
+
+.facilitando h2{
+	font-family: var(--font_titulo);
+	font-size: 3rem;
+	margin-bottom: 15px;
+
+}
+
+.facilitando p{
+	font-family: var(--font_texto);
+	line-height: 32px;
+	text-align: justify;
+	font-size: 1rem;
+}
+
+.facilitando img{
+	width: 450px;
+	margin-left: 40px;
+}
+
+.nossa_missao{
+	margin-top: 50px;
+}
+
+.nossa_missao h2{
+	color: var(--azul_vw);
+	font-size: 40px;
+	font-family: var(--font_titulo);
+	margin-bottom: 50px;
+}
+
+.cards{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	gap: 10px;
+	margin-bottom: 15px
+}
+
+.card{
+	background-color: var(--azul_vw);
+	color: #E7E7E7;
+	height: 500px;
+	width: 550px;
+	border-radius: 10px;
+	padding: 35px 30px 30px 35px;
+}
+
+.card h3{
+	font-size: 40px;
+	font-family: var(--font_titulo);
+}
+
+.card p{
+	font-size: 20px;
+	font-family: var(--font_texto);
+	text-align: justify;
+}
+
+.valores{
+	width: 1100px;
+	height: 450px;
+	margin-bottom: 50px;
+}
+
+footer{
+	background-color: var(--azul_vw);
+	color: aliceblue;
+}
+
+.redes_sociais{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 30px;
+}
+
+.redes_sociais>img{
+	width: 180px;
+}
+
+.redes_sociais_links{
+	width: 230px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 400px;
+}
+
+.divisoria{
+	margin: 30px auto;
+	width: 1100px;
+	height: 2px;
+	border-radius: 20px;
+	background-color: var(--verde);
+}
+
+.footer_conteudo{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 1100px;
+}
+
+.footer_conteudo nav{
+	display: flex;
+	flex-direction: column;
+}
+
+.footer_conteudo nav span{
+	color: var(--verde);
+	font-size: 25px;
+	margin: 5px 0;
+
+}
+
+.footer_conteudo nav a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	margin: 3px 0;
+	width: fit-content;
+}
+
+.newsletter{
+	width: 450px;
+	height: 225px;
+	border: 2px solid aliceblue;
+	padding: 10px 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.newsletter h2{
+	color: var(--verde);
+	margin: 15px 0;
+	font-family: var(--font_texto);
+	font-size: 20px;
+}
+
+.news_email{
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.input_text{
+	background-color: transparent;
+	border: 1px solid aliceblue;
+	border-radius: 3px;
+	width: 270px;
+	height: 30px;
+	padding: 0 7px;
+}
+
+.input_btn{
+	background: url(./imgs/footer_seta.svg) no-repeat;
+    background-position: center;
+	border-radius: 7px;
+    width: 60px;
+    height: 34px;
+	font-family: var(--font_titulo);
+}
+
+.newsletter p{
+	font-family: var(--font_texto);
+	font-size: 16px;
+	text-align: center;
+}
